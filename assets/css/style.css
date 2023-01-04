@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 37px 0px !important;
+}
+nav .navbar-brand img {
+  width: 205px;
+  height: 25px;
+}
+nav .navbar-nav .nav-item {
+  padding: 0px 29px !important;
+}
+nav .navbar-nav .nav-item a {
+  padding: 0 !important;
+  position: relative !important;
+}
+nav .navbar-nav .nav-item a::before {
+  content: "";
+  position: absolute !important;
+  bottom: 0px;
+  left: 0px;
+  height: 2px;
+  width: 100%;
+  color: black;
+  transition: all 0.3s;
+}
+nav .navbar-nav .nav-item a:hover::before {
+  width: 100% !important;
+}
+nav .navbar-nav .nav-item:nth-child(1) a {
+  border-bottom: 1px solid black;
+}
+nav .nav-icons a {
+  color: black;
+  padding-left: 20px;
+}
+nav .nav-icons a .card-badge {
+  padding: 0.15em 0.45em !important;
+}
+nav .nav-icons a:nth-child(1):hover {
+  color: red;
+}
+nav .nav-icons a:nth-child(3) {
+  text-decoration: none;
+}
+
+.first-slide-section {
+  position: relative;
+}
+
+.slider-head-text {
+  font-size: 380%;
+  font-weight: 400;
+}
+
+.slider-text {
+  position: absolute;
+  left: 14%;
+  top: 25%;
+}
+
+.flowers {
+  color: red;
+}
+
+pre {
+  font-size: 110%;
+  color: #959393;
+}
+
+#main-content {
+  padding-top: 57px;
+  padding-bottom: 75px;
+}
+#main-content .flowers-list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 27px;
+  padding: 0;
+}
+#main-content .flowers-list .flower-item {
+  margin-right: 32px;
+  font-size: 12px;
+  cursor: pointer;
+}
+#main-content .flowers-list .flower-item:hover {
+  color: red;
+}
+#main-content .flowers-list .flower-item.active {
+  color: red;
+}
+#main-content .product-content .product-img {
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+#main-content .product-content .product-img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  transition: all 0.2s;
+}
+#main-content .product-content .product-img img:hover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  transform: scale(1.03);
+}
+#main-content .product-content .product-desc {
+  margin-top: 23px;
+  text-align: center;
+}
+#main-content .product-content .product-desc h6 {
+  font-size: 12px;
+  cursor: pointer;
+}
+#main-content .product-content .product-desc .add-to-cart {
+  font-size: 12px;
+  cursor: pointer;
+  left: 39%;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all 0.4s;
+}
+#main-content .product-content .product-desc .add-to-cart:hover {
+  color: red;
+}
+#main-content .product-content .product-desc .product-price {
+  font-size: 12px;
+  right: 45%;
+  opacity: 1;
+  transform: translateX(0%);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+#main-content .product-content:hover .add-to-cart {
+  opacity: 1;
+  transform: translateX(1%);
+}
+#main-content .product-content:hover .product-price {
+  opacity: 0;
+  right: 15% !important;
+}
+
+.video {
+  background-color: #f7f7f7;
+  margin: 15px 0;
+}
+.video .video-img {
+  width: 650px;
+  height: 420px;
+  margin: 120px 0;
+  transition: all 0.4s;
+}
+.video .video-img:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.video .play-icon {
+  color: red;
+  background-color: white;
+  position: absolute;
+  left: 250px;
+  top: 280px;
+  padding: 35px 45px;
+  border-radius: 50%;
+  font-size: 25px;
+}
+.video .play-video {
+  overflow: hidden;
+  position: relative;
+}
+.video .vido-button {
+  color: red;
+  background-color: transparent;
+  border: none;
+}
+.video .video-word {
+  margin: 120px 0px;
+  padding: 0 90px;
+}
+.video .video-word .video-p-word {
+  margin-top: 27px;
+  color: #959393;
+}
+
+.user {
+  padding: 120px 0;
+}
+.user .title-word {
+  font-family: "Lora";
+  font-size: 110%;
+  color: #959393;
+}
+.user .user-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+#join {
+  padding: 120px 0px;
+  background-image: url(../../images/h3-background-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#join .join-input-group {
+  margin-bottom: 15px;
+}
+#join .join-input-group .join-input {
+  padding: 19px 18px;
+  line-height: 20px;
+  width: 100%;
+}
+#join .join-input-group button {
+  background-color: crimson !important;
+  color: white !important;
+  padding: 0 50px;
+  border: none !important;
+}
+
+#blog {
+  padding: 120px 0;
+  background-color: #f7f7f7;
+}
+#blog .blog-card {
+  text-align: center;
+  overflow: hidden;
+}
+#blog .blog-card .blog-img {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+#blog .blog-card .blog-img .blog-date {
+  top: 10px;
+  left: 10px;
+  background-color: white;
+  color: black;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+#blog .blog-card .blog-img .blog-date:hover {
+  color: crimson;
+}
+#blog .blog-card .blog-img img {
+  max-width: 100%;
+  vertical-align: bottom;
+  transition: 0.3s;
+}
+#blog .blog-card .blog-img img:hover {
+  vertical-align: bottom;
+  transform: scale(1.1);
+}
+#blog .blog-card .blog-content a {
+  font-size: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+#testimonials {
+  padding: 120px 0px;
+}
+
+#footer {
+  background-color: #fefaf3;
+}
+#footer .footer-info {
+  padding: 73px 0;
+}
+#footer .footer-info h6 {
+  margin-bottom: 23px;
+  font-size: 12px;
+  font-weight: 500;
+}
+#footer .footer-info .footer-menu-list {
+  list-style: none;
+  padding: 0;
+}
+#footer .footer-info .footer-menu-list .footer-menu-item {
+  padding-bottom: 3px;
+  line-height: 24px;
+  font-size: 12px;
+  color: #8b8b8b;
+  cursor: pointer;
+}
+#footer .footer-sec {
+  border-top: 1px solid #eceae1;
+  padding: 23px 0 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+#footer .footer-sec .copy-write {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 12px;
+  color: #afafaf;
+}
+#footer .footer-sec .footer-social-list {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-sec .footer-social-list .footer-social-item {
+  font-size: 12px;
+  cursor: pointer;
+  color: #afafaf;
+}
+#footer .footer-sec .footer-social-list .footer-social-item:nth-child(2) {
+  margin-left: 25px;
+}/*# sourceMappingURL=style.css.map */
